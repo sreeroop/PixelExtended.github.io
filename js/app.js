@@ -49,6 +49,7 @@ function navCheck(entries) {
                 icon.setAttribute("fill", gradientIndex == 0 ? '#000' : palatte[gradientIndex])
             })
 
+            document.querySelector("body").style.setProperty("--color", gradientIndex == 0 ? '#000' : palatte[gradientIndex])
         }
     });
 }
@@ -56,5 +57,3 @@ function navCheck(entries) {
 sections.forEach((section) => {
     observer.observe(section);
 });
-
-
